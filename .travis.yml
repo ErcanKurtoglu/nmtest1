@@ -15,3 +15,7 @@ deploy:
   env: "Nmtest1-env-1"
   bucket_name: "elasticbeanstalk-us-east-1-588738596885"
   bucket_path: "nmtest1"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
