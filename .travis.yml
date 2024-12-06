@@ -7,3 +7,11 @@ before_install:
 
 script:
   - docker run -e CI=true ercankurtoglu/test1 npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "nmtest1"
+  env: "Nmtest1-env-1"
+  bucket_name: "elasticbeanstalk-us-east-1-588738596885"
+  bucket_path: "nmtest1"
